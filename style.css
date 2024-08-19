@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav i {
+  color: white;
+  padding: 15px;
+}
+
+nav i:hover {
+  background: rgb(201, 198, 198);
+  color: black;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px;
+}
+
+.header1 span {
+  background: black;
+  color: white;
+  padding: 5px;
+}
+
+.header2 {
+  position: relative;
+}
+
+.header2 div {
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.header2 h2 {
+  font-size: 2rem;
+}
+
+.header2 h1 {
+  font-size: 3rem;
+}
+
+.header2 button {
+  width: 40%;
+  padding: 20px;
+  font-weight: bold;
+  background: rgb(222, 220, 220);
+  opacity: 0.5;
+  border: none;
+}
+
+.header2 button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+section.content {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.titleHeadings h4 span {
+  color: gray;
+}
+
+.titleHeadings img,
+aside img {
+  width: 100%;
+}
+
+.titleHeadings p span {
+  font-weight: bold;
+}
+
+.titleHeading1,
+.titleHeading2,
+.titleHeading3 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.titleHeadings p {
+  width: 100%;
+}
+
+.titleHeadings .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleHeadings #replies1,
+#replies2,
+#replies3 {
+  width: 100%;
+}
+
+.titleHeadings hr {
+  border-top: 1px solid #f1f1f1;
+  margin-top: 30px;
+}
+
+.titleHeadings .reply {
+  padding: 20px;
+  display: flex;
+  gap: 100px;
+}
+
+.titleHeadings .reply img {
+  width: 100px;
+}
+
+.replyInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 17px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: 1px solid rgb(189, 187, 187);
+  color: white;
+}
+
+.likeButton {
+  color: black;
+  background: white;
+  border: 1px solid rgb(189, 187, 187);
+}
+
+.repliesButton {
+  background: black;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.repliesButton span {
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  margin: 0px 5px;
+}
+
+.about,
+.posts,
+.tags,
+.inspiration,
+.follow,
+.subscribe {
+  margin: 20px 0px 40px;
+}
+
+.about div {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.about p {
+  margin-top: 20px;
+}
+
+aside h4 {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.post {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.post:hover {
+  background-color: rgb(218, 216, 216);
+}
+
+.post img {
+  width: 50px;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.postInfo span:first-child {
+  font-size: 18px;
+}
+
+.ad {
+  padding: 10px;
+  background: white;
+  height: 200px;
+}
+
+.ad div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.tags div {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+}
+
+.tags span {
+  background-color: #f1f1f1;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.tags span:first-child {
+  background-color: black;
+  color: white;
+  font-size: 17px;
+}
+
+.inspiration div {
+  padding: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.follow div {
+  padding: 10px;
+  background-color: white;
+}
+
+.follow i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.follow i:hover {
+  opacity: 0.5;
+}
+
+.subscribe div {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribe input {
+  padding: 10px;
+}
+
+.subscribe button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: grey;
+}
+
+#subscribeMessageModal {
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#subscribeMessageModal .message {
+  background-color: white;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.message {
+  position: relative;
+}
+
+.message i {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.message i:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+.message input {
+  padding: 10px;
+}
+
+.message button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.message button:hover {
+  background-color: grey;
+}
+
+footer {
+  background: #616161;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  padding-left: 20px;
+}
+
+footer button {
+  background: black;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----------------------------- */
+@media (width <= 600px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (width >= 990px) {
+  section.content {
+    display: flex;
+    gap: 30px;
+  }
+
+  .titleHeadings {
+    width: 66%;
+  }
+
+  aside {
+    width: 34%;
+  }
+}
